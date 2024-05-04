@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución con JavaScript</title>
+
+    <!-- CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/styles/index.css" rel="stylesheet"> 
+<body>
+    <div class="container" id="main-container">
+        <div class="jumbotron text-center">
+            <h1 class="display-5">Calculadora de Números Perfectos</h1>
+            <p class="lead">Encuentra los números perfectos en un rango dado</p>
+        </div>
+    
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center"> <!-- Agregamos la clase text-center aquí -->
+                        <h5 class="card-title">Selecciona un rango de números</h5>
+                        <div class="form-group">
+                            <label for="rangeInput" class="text-white">Rango:</label>
+                            <input type="range" class="form-control-range" id="rangeInput" min="1" max="1000" value="100">
+                            <output class="form-control-range" id="rangeOutput">100</output>
+                        </div>
+                        <button id="calculateButton" class="btn btn-primary btn-lg btn-block mt-3">Calcular Números Perfectos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="numeros-perfectos" class="mt-4">
+            <h2 class="text-center">Números Perfectos Encontrados</h2>
+            <div id="perfectNumbersList" class="list-group"></div>
+        </div>
+    </div>
+    
+    
+</body>
+
+    <!-- Bootstrap JS y dependencias de jQuery y Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu script JavaScript personalizado -->
+    <script src="js/main.js"></script>
+
+</html>
